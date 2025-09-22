@@ -59,7 +59,7 @@ with mlflow.start_run():
 
     mlflow.log_artifact(__file__)
 
-    mlflow.sklearn.log_model(sk_model=dt, name="decision_tree")
+    mlflow.sklearn.log_model(sk_model=dt, artifact_path="decision_tree")
 
     mlflow.set_tag('author','kaustav')
     mlflow.set_tag('model','decision tree')
